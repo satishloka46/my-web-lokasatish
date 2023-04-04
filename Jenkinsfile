@@ -4,7 +4,7 @@ pipeline {
                string(name: 'jfrog_pass', defaultValue: '', description: ' this is password for jfrog') }
   environment {
                 http-user = "jfrog_user"
-				http-password = "jfrog_pass"
+	        http-password = "jfrog_pass"
                      
             }
   
