@@ -20,7 +20,7 @@ pipeline {
       steps {
         sh """
              wget --http-user=${jfrog_user}  --http-password=${jfrog_pass} https://satishloka4666.jfrog.io/artifactory/com/mycompany/app/my-app-lokasatish/2.0/my-app-lokasatish-2.0.war
-			 mv my-app-lokasatish-2.0.war   my-app-satish.war
+	     mv my-app-lokasatish-2.0.war   my-app-satish.war
              cp my-app-satish.war /home/satish/tomcat9/webapps
           """
       }
