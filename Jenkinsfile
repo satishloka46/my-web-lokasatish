@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent { label 'master' }
   parameters { string(name: 'jfrog_user', defaultValue: '', description: ' this is user name for jfrog') 
                string(name: 'jfrog_pass', defaultValue: '', description: ' this is password for jfrog') }
   environment {
@@ -9,7 +9,6 @@ pipeline {
             }
   
   stages {
-    
     stage('build code and push code to artifact repo ') {
       steps {
         sh "cd java-war-project-feature-cicd && mvn clean deploy"
