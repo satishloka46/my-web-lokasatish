@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.mycompany.app</groupId>
-  <artifactId>my-app-ravi</artifactId>
+  <artifactId>my-app-lokasatish</artifactId>
   <version>2.0</version>
   <packaging>war</packaging>
 
@@ -67,13 +67,11 @@
   <distributionManagement>
     <repository>
         <id>release</id>
-        <name>devops-release</name>
-        <url>https://devops400.jfrog.io/artifactory/devops</url>
+        <url>https://satishloka4666.jfrog.io/artifactory/my-app-lokasatish</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>devops-snapshots</name>
-        <url>https://devops400.jfrog.io/artifactory/devops</url>
+        <url>https://satishloka4666.jfrog.io/artifactory/my-app-lokasatish</url>
     </snapshotRepository>
 </distributionManagement> 
 </project>
