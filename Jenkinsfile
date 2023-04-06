@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('build code and push code to artifact jfrog repo ') {
             steps {
-                sh "cd java-war-project-feature-cicd && mvn clean deploy"
+                sh "mvn clean deploy"
             }
         }
     
